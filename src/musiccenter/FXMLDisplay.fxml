@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.geometry.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" maxHeight="600.0" maxWidth="600.0" minHeight="600.0" minWidth="600.0" prefHeight="600.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="musiccenter.FXMLDisplayController">
+   <children>
+      <VBox layoutX="187.0" layoutY="100.0" prefHeight="600.0" prefWidth="600.0" style="-fx-background-color: #252838;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <HBox prefHeight="100.0" prefWidth="200.0">
+               <children>
+                  <Label prefHeight="36.0" prefWidth="269.0" text="Welcome to Music Box" textFill="#ffc7c7">
+                     <HBox.margin>
+                        <Insets left="180.0" top="30.0" />
+                     </HBox.margin>
+                     <font>
+                        <Font name="System Bold Italic" size="25.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="lbUser" textFill="#ffc7c7">
+                     <HBox.margin>
+                        <Insets left="50.0" top="20.0" />
+                     </HBox.margin>
+                     <font>
+                        <Font name="System Italic" size="13.0" />
+                     </font>
+                  </Label>
+               </children>
+            </HBox>
+            <HBox prefHeight="95.0" prefWidth="600.0">
+               <children>
+                  <Label prefHeight="87.0" prefWidth="110.0" textFill="#fffafa">
+                     <font>
+                        <Font size="10.0" />
+                     </font>
+                  </Label>
+                  <Rectangle fx:id="recPoster" arcHeight="5.0" arcWidth="5.0" fill="#252838" height="82.0" stroke="#252838" strokeType="INSIDE" width="117.0">
+                     <HBox.margin>
+                        <Insets left="10.0" />
+                     </HBox.margin>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Rectangle>
+                  <VBox prefHeight="90.0" prefWidth="262.0">
+                     <children>
+                        <Label fx:id="lbName" textFill="#5f9fef">
+                           <VBox.margin>
+                              <Insets left="5.0" top="5.0" />
+                           </VBox.margin>
+                           <font>
+                              <Font size="13.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="lbSinger" textFill="#5f9fef">
+                           <VBox.margin>
+                              <Insets left="5.0" top="5.0" />
+                           </VBox.margin>
+                           <font>
+                              <Font size="13.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </VBox>
+                  <VBox prefHeight="200.0" prefWidth="100.0">
+                     <children>
+                        <Button fx:id="btnView" mnemonicParsing="false" onAction="#handleButtonShow" style="-fx-background-color: darkblue;" text="View" textFill="WHITE">
+                           <VBox.margin>
+                              <Insets top="20.0" />
+                           </VBox.margin>
+                        </Button>
+                     </children>
+                  </VBox>
+               </children>
+            </HBox>
+            <HBox prefHeight="366.0" prefWidth="600.0">
+               <children>
+                  <VBox prefHeight="362.0" prefWidth="130.0" style="-fx-border-color: #ffc7c7;">
+                     <children>
+                        <Label fx:id="lbMyList" text="My List" textFill="#ffc7c7">
+                           <VBox.margin>
+                              <Insets left="20.0" top="20.0" />
+                           </VBox.margin>
+                           <font>
+                              <Font name="System Bold Italic" size="18.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="lbViewAll" text="View All" textFill="#ffc7c7">
+                           <VBox.margin>
+                              <Insets left="20.0" top="20.0" />
+                           </VBox.margin>
+                           <font>
+                              <Font name="System Italic" size="16.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="lbCountry" text="COUNTRY" textFill="#ffc7c7">
+                           <VBox.margin>
+                              <Insets left="20.0" top="10.0" />
+                           </VBox.margin>
+                           <font>
+                              <Font name="System Italic" size="16.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="lbClassical" text="CLASSICAL" textFill="#ffc7c7">
+                           <VBox.margin>
+                              <Insets left="20.0" top="10.0" />
+                           </VBox.margin>
+                           <font>
+                              <Font name="System Italic" size="16.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="lbPop" text="POP" textFill="#ffc7c7">
+                           <VBox.margin>
+                              <Insets left="20.0" top="10.0" />
+                           </VBox.margin>
+                           <font>
+                              <Font name="System Italic" size="16.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="lbFolk" text="FOLK" textFill="#ffc7c7">
+                           <VBox.margin>
+                              <Insets left="20.0" top="10.0" />
+                           </VBox.margin>
+                           <font>
+                              <Font name="System Italic" size="16.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="lbRock" text="ROCK" textFill="#ffc7c7">
+                           <VBox.margin>
+                              <Insets left="20.0" top="10.0" />
+                           </VBox.margin>
+                           <font>
+                              <Font name="System Italic" size="16.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="lbOrchesta" text="ORCHESTA" textFill="#ffc7c7">
+                           <VBox.margin>
+                              <Insets left="20.0" top="10.0" />
+                           </VBox.margin>
+                           <font>
+                              <Font name="System Italic" size="16.0" />
+                           </font>
+                        </Label>
+                     </children>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </VBox>
+                  <ScrollPane prefHeight="371.0" prefWidth="463.0">
+                     <content>
+                        <TableView fx:id="tbView" prefHeight="371.0" prefWidth="461.0" style="-fx-border-color: #ffc7c7;">
+                          <columns>
+                            <TableColumn fx:id="colName" prefWidth="212.0" text="Name" />
+                              <TableColumn fx:id="colSinger" prefWidth="123.0" text="Singer" />
+                              <TableColumn fx:id="colGenre" prefWidth="101.0" text="Genre" />
+                          </columns>
+                        </TableView>
+                     </content>
+                  </ScrollPane>
+               </children>
+            </HBox>
+            <HBox prefHeight="52.0" prefWidth="600.0">
+               <children>
+                  <Button fx:id="btnAdd" mnemonicParsing="false" onAction="#handleButtonAdd" text="Add">
+                     <HBox.margin>
+                        <Insets left="450.0" top="5.0" />
+                     </HBox.margin>
+                  </Button>
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

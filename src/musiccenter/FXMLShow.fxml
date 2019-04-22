@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.web.*?>
+<?import javafx.scene.shape.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="552.0" prefWidth="400.0" style="-fx-background-color: #252838;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="musiccenter.FXMLShowController">
+   <children>
+      <StackPane prefHeight="448.0" prefWidth="400.0">
+         <children>
+            <WebView fx:id="wvScreen" prefHeight="265.0" prefWidth="400.0" />
+         </children>
+      </StackPane>
+      <GridPane>
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="158.0" minWidth="10.0" prefWidth="147.0" />
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="169.0" minWidth="10.0" prefWidth="121.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="88.0" minWidth="10.0" prefWidth="54.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="94.0" minWidth="10.0" prefWidth="58.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints maxHeight="43.0" minHeight="10.0" prefHeight="43.0" vgrow="SOMETIMES" />
+          <RowConstraints maxHeight="46.0" minHeight="10.0" prefHeight="31.0" vgrow="SOMETIMES" />
+          <RowConstraints maxHeight="23.0" minHeight="10.0" prefHeight="12.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <VBox.margin>
+            <Insets left="10.0" right="10.0" top="5.0" />
+         </VBox.margin>
+         <children>
+            <Label fx:id="lbUploader" text="Label" textFill="#ffc7c7" GridPane.rowIndex="1">
+               <font>
+                  <Font name="System Italic" size="15.0" />
+               </font></Label>
+            <Label fx:id="lbName" text="Label" textFill="#ffc7c7">
+               <font>
+                  <Font name="System Italic" size="15.0" />
+               </font></Label>
+            <Label fx:id="lbSinger" text="Label" textFill="#ffc7c7" GridPane.columnIndex="1">
+               <font>
+                  <Font name="System Italic" size="15.0" />
+               </font></Label>
+            <Button fx:id="btnAddFav" mnemonicParsing="false" onAction="#handleButtonFav" prefHeight="26.0" prefWidth="41.0" text="+" GridPane.columnIndex="2" />
+            <Button fx:id="btnEdit" mnemonicParsing="false" onAction="#handleButtonEdit" text="Edit" GridPane.columnIndex="3" />
+         </children>
+      </GridPane>
+   </children>
+</VBox>
